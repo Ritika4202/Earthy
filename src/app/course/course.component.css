@@ -1,0 +1,133 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: 300px;
+    
+  }
+  body{
+    background-color: rgb(246, 233, 221);
+  }
+  .product-box {
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    margin-top: auto;
+   
+    
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-action {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .button1 {
+    width: 100%;
+    height: 100%;
+    background-color: #9cb454c8;
+    color: rgb(255, 255, 255);
+    border:black;
+    font-size: 16px;
+    font-weight:inherit;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .overlay
+  {
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin:auto;
+    margin-top: 5%;
+    height: 550px;
+    width:350px;
+    position:relative;
+   height:100%;
+  }
+  .buttonpop
+  {
+  
+  border-style:double;
+  border-color: white;
+  color:#ffffffc8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height:20%;
+  justify-content: center;
+  background-color:#9cb454c8 ;
+  }
+  .content
+  {
+    width: 450px;
+    height: 80%;
+    padding: 10px;
+    margin-top: auto;
+    height:80%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    color: #9cb454c8;
+  }
+  h3{
+    color: #9cb454c8;
+    padding: 0%;
+    margin-bottom: -6px;
+  }
+  .para{
+  color:#99a964c8 ;
+  text-decoration: solid;
+  }
+  
+  
+  

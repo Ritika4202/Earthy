@@ -1,0 +1,27 @@
+<html lang="en" dir="ltr">
+  
+  <body>
+    <div class="container" *ngIf="!show">
+        <div class="product-box"   *ngFor="let product1 of products" >
+          <div class="product-image" >
+            <img src={{product1.name}} alt="Your Image">
+          </div>
+          <div class="product-action">
+            
+            <button class="button1" (click)="openpopup(product1)" style="vertical-align:middle"><span><p>{{product1.desc}} </p></span>></button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" *ngIf="show">
+        <div class="content">
+            <h1 style="text-align: center;">{{pn}}</h1>
+            <img src={{img}}>
+            <h3>PRICE - {{price}}</h3>
+            <h3>FEATURES -</h3>
+            <p class="para">{{data}}</p>
+            <button  class="buttonpop" style="vertical-align:middle" (click)="closepopup()">CLOSE</button>
+        </div>
+      </div>
+  </body>
+</html>
+ 
